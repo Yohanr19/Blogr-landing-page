@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+:root {
+  --LightRedBtnText: hsl(356, 100%, 66%);
+  --VeryLightRedBtnHoverBg: hsl(355, 100%, 74%);
+  --DarkBlueHeadings: hsl(208, 49%, 24%);
+  --WhiteText: hsl(0, 0%, 100%);
+  --GrayBlueFooterText: hsl(240, 2%, 79%);
+  --veryDarkGrayBlueBodyCopy: hsl(207, 13%, 34%);
+  --DarkBlueFooterBg: hsl(240, 10%, 16%);
+  --HeaderGradientPink: linear-gradient(
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+  --BodyGradientGrey: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  --FontOverPass: Overpass, sans-serif;
+  --FontUbuntu: Ubuntu, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--FontUbuntu);
+}
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+header {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  width: 80%;
+}
+#icon-close {
+  right: 0;
+  top: 0;
+  position: absolute;
+  display: none;
+}
+#icon-hamburger {
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+.menu {
+  position: absolute;
+  top: 6rem;
+  padding: 1rem 0rem;
+  width: 80%;
+  margin: 10px 10%;
+  background-color: var(--WhiteText);
+  display: grid;
+  place-items: center;
+  color: var(--veryDarkGrayBlueBodyCopy);
+  visibility: hidden;
+}
+.menu-option {
+  display: grid;
+  grid-auto-rows: auto;
+  text-align: center;
+  width: 80%;
+}
+.option {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.6rem;
+  padding: 1rem 35%;
+  width: 100%;
+}
+.menu-child {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--GrayBlueFooterText);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  width: 100%;
+  position: absolute;
+  visibility: hidden;
+}
+.login {
+  padding: 0.5rem 0;
+  font-weight: bold;
+  margin-top: 1.4rem;
+}
+.sing-up {
+  background: var(--HeaderGradientPink);
+  color: var(--WhiteText);
+}
+
+.arrow {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 25%;
+  margin-left: 1rem;
+}
+.desktop-arrow {
+  display: none;
+}
+.intro {
+  padding-top: 150px;
+  background-image: url(./images/bg-pattern-intro.svg),
+    var(--HeaderGradientPink);
+  background-size: 370%, cover;
+  background-position-y: -400px, 0;
+  background-position-x: -100%, 0;
+  border-bottom-left-radius: 6rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--WhiteText);
+  font-size: 1.3rem;
+  padding-bottom: 150px;
+}
+.big-text {
+  font-size: 1.7em;
+  padding: 1rem 2rem;
+}
+.small-text {
+  font-size: 0.7em;
+  padding: 0.5rem 3rem;
+  padding-bottom: 2rem;
+  font-weight: lighter;
+}
+.start {
+  background-color: white;
+  color: var(--LightRedBtnText);
+}
+.learn-more {
+  background-color: transparent;
+  color: var(--WhiteText);
+}
+.btn {
+  padding: 0.7rem 2rem;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  border: 0.5px white solid;
+}
+:hover.learn-more {
+  background-color: white;
+  color: var(--LightRedBtnText);
+}
+:hover.start {
+  background-color: var(--VeryLightRedBtnHoverBg);
+  color: var(--WhiteText);
+}
+:hover a,
+.login,
+.sing-up,
+.btn {
+  cursor: pointer;
+}
+.main-section {
+  width: 100%;
+  margin: 4rem auto;
+  text-align: center;
+  font-family: var(--FontOverPass);
+}
+.def-wrapper {
+  width: 90%;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  color: var(--veryDarkGrayBlueBodyCopy);
+}
+.article-title {
+  color: var(--DarkBlueHeadings);
+  padding: 1rem 3rem;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.desktop-img {
+  display: none;
+}
+.phones {
+  color: var(--WhiteText);
+  background-image: url(./images/bg-pattern-circles.svg),
+    var(--BodyGradientGrey);
+  background-size: cover;
+  background-position: top;
+  background-position-y: -200px, 0;
+  background-repeat: no-repeat;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-bottom-left-radius: 6rem;
+  border-top-right-radius: 6rem;
+  position: relative;
+  bottom: 14rem;
+  z-index: -1;
+  margin-bottom: -8rem;
+}
+.article-title-white {
+  font-size: 2rem;
+  padding: 2rem 1rem;
+}
+.footer-wrapper {
+  color: white;
+  background-color: var(--DarkBlueFooterBg);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-top-right-radius: 6rem;
+  padding: 4rem 0;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  font-weight: lighter;
+}
+.footer-content {
+  padding: 1rem 1rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 900px) {
+  .intro {
+    background-size: 200%, cover;
+    background-position: center, center;
+  }
+  .menu {
+    visibility: visible;
+    background-color: transparent;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr;
+    color: white;
+    top: 0;
+    left: 3rem;
+    width: 100%;
+  }
+  .menu-option {
+    justify-self: start;
+    align-self: start;
+  }
+  .menu-child {
+    background-color: var(--WhiteText);
+    color: var(--veryDarkGrayBlueBodyCopy);
+    margin-left: 2rem;
+    text-align: left;
+    padding-left: 0.5rem;
+  }
+  .desktop-arrow {
+    display: block;
+  }
+  .mobile-arrow {
+    display: none;
+  }
+  #icon-hamburger {
+    display: none;
+  }
+  .menu-option {
+    margin-left: 0;
+    justify-self: start;
+    text-align: left;
+  }
+  .login {
+    margin-top: 0;
+    justify-self: end;
+    align-self: start;
+  }
+  .sing-up {
+    align-self: start;
+    background: white;
+    color: var(--LightRedBtnText);
+  }
+  :hover.sing-up {
+    background: var(--VeryLightRedBtnHoverBg);
+    color: var(--WhiteText);
+  }
+  header {
+    padding-left: 3rem;
+  }
+  #editor-mobile {
+    display: none;
+  }
+  #editor-desktop {
+    display: block;
+  }
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .text-left {
+    grid-row: 1;
+  }
+  .text-left,
+  .text-right {
+    padding-top: 4rem;
+  }
+  .phones {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-right: 2rem;
+    padding-left: 30%;
+    bottom: 2rem;
+    margin-bottom: -4rem;
+    width: 100%;
+  }
+  #phones-img {
+    position: absolute;
+    width: 30%;
+    left: 0;
+  }
+  #laptop-desktop {
+    display: block;
+  }
+  #laptop-mobile {
+    display: none;
+  }
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  .list {
+    margin-top: 3rem;
+  }
+}
