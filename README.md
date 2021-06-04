@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Yohanr19/Blogr-lading-page]
-- Live Site URL: [https://yohanr19.github.io/Blogr-lading-page]
+- Solution URL: [https://github.com/Yohanr19/Blogr-landing-page]
+- Live Site URL: [https://yohanr19.github.io/Blogr-landing-page]
 
 ## My process
 
