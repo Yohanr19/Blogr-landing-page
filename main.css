@@ -32,7 +32,7 @@ header {
   position: absolute;
   top: 2rem;
   left: 1rem;
-  max-width: 80%;
+  width: 80%;
 }
 #logo-header {
   width: 100%;
